@@ -1,0 +1,2 @@
+AppBundle\Action\SearchAction:
+    path: /

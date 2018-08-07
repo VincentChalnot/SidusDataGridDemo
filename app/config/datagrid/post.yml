@@ -1,0 +1,54 @@
+sidus_data_grid:
+    configurations:
+        news:
+            columns:
+                id:
+                    label: '#'
+                title: ~
+                publicationDate: ~
+                publicationStatus:
+                    template: 'Datagrid/badge.html.twig'
+                author: ~
+                categories: ~
+                actions:
+                    template: 'Datagrid/actions.html.twig'
+            actions:
+                create:
+                    form_type: Symfony\Component\Form\Extension\Core\Type\ButtonType
+                    disabled: true
+                    attr:
+                        class: btn btn-primary
+            # The query_handler configuration key must contain a valid Sidus/FilterBundle configuration definition
+            # See # See https://github.com/VincentChalnot/SidusFilterBundle for more information
+            query_handler:
+                provider: doctrine
+                options:
+                    entity: AppBundle\Entity\News
+                sortable:
+                    - id
+                    - title
+                    - publicationDate
+                    - publicationStatus
+                default_sort:
+                    publicationDate: DESC
+                filters:
+                    title: ~
+                    author:
+                        attributes: [author.fullName, author.email]
+                    publicationDate:
+                        type: date_range
+                    publicationStatus:
+                        type: choice
+                        default: [validated, published]
+                        form_options:
+                            multiple: true
+                            expanded: true
+                    categories:
+                        type: choice
+                        form_options:
+                            multiple: true
+                        attributes: [categories.title]
+                    deleted:
+                        default: 0
+                        options:
+                            hidden: true
