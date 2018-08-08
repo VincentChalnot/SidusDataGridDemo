@@ -1,4 +1,4 @@
-{% set publicationStatus = column.render(result) %}
+{% set publicationStatus = column.renderValue(result) %}
 <span class="badge badge-{{ statusBadge[publicationStatus] }}">
     {{ publicationStatus }}
 </span>

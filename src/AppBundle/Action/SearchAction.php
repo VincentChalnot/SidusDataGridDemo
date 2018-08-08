@@ -66,13 +66,12 @@ class SearchAction
         );
 
         $datagrid = $this->dataGridRegistry->getDataGrid('news');
-        $form = $datagrid->buildForm($builder);
+        $datagrid->buildForm($builder);
         $datagrid->handleRequest($request);
 
         return $this->renderEngine->renderResponse(
             'Search/action.html.twig',
             [
-                'form' => $form->createView(),
                 'datagrid' => $datagrid,
             ]
         );

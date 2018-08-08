@@ -8,7 +8,8 @@ sidus_data_grid:
                 publicationDate: ~
                 publicationStatus:
                     template: 'Datagrid/badge.html.twig'
-                author: ~
+                author:
+                    sort_column: author.fullName
                 categories: ~
                 actions:
                     template: 'Datagrid/actions.html.twig'
@@ -29,6 +30,7 @@ sidus_data_grid:
                     - title
                     - publicationDate
                     - publicationStatus
+                    - author.fullName
                 default_sort:
                     publicationDate: DESC
                 filters:

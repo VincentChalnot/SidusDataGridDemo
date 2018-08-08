@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "composer/ca-bundle",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169"
+                "reference": "46afded9720f40b9dc63542af4e3e43a1177acb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/d2c0a83b7533d6912e8d516756ebd34f893e9169",
-                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/46afded9720f40b9dc63542af4e3e43a1177acb0",
+                "reference": "46afded9720f40b9dc63542af4e3e43a1177acb0",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2018-03-29T19:57:20+00:00"
+            "time": "2018-08-08T08:57:40+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1898,12 +1898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/VincentChalnot/SidusDataGridBundle.git",
-                "reference": "03153761f2d65910f8440acbfeb206eb1d720676"
+                "reference": "20f7f281559337e5b7f3026737561a60e8ee4436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/VincentChalnot/SidusDataGridBundle/zipball/03153761f2d65910f8440acbfeb206eb1d720676",
-                "reference": "03153761f2d65910f8440acbfeb206eb1d720676",
+                "url": "https://api.github.com/repos/VincentChalnot/SidusDataGridBundle/zipball/20f7f281559337e5b7f3026737561a60e8ee4436",
+                "reference": "20f7f281559337e5b7f3026737561a60e8ee4436",
                 "shasum": ""
             },
             "require": {
@@ -1934,7 +1934,7 @@
                 "datagrid",
                 "sort"
             ],
-            "time": "2018-08-07T15:22:24+00:00"
+            "time": "2018-08-08T14:56:10+00:00"
         },
         {
             "name": "sidus/filter-bundle",
@@ -1942,12 +1942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/VincentChalnot/SidusFilterBundle.git",
-                "reference": "649b39741de3e686f936a4388c887845144fa6c2"
+                "reference": "de04c2eb37fc9b94bce68af891ca1f73fc2d39bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/VincentChalnot/SidusFilterBundle/zipball/649b39741de3e686f936a4388c887845144fa6c2",
-                "reference": "649b39741de3e686f936a4388c887845144fa6c2",
+                "url": "https://api.github.com/repos/VincentChalnot/SidusFilterBundle/zipball/de04c2eb37fc9b94bce68af891ca1f73fc2d39bd",
+                "reference": "de04c2eb37fc9b94bce68af891ca1f73fc2d39bd",
                 "shasum": ""
             },
             "require": {
@@ -1987,7 +1987,7 @@
                 "filter",
                 "sort"
             ],
-            "time": "2018-08-07T15:21:47+00:00"
+            "time": "2018-08-08T14:54:52+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
