@@ -16,9 +16,10 @@ sidus_data_grid:
             actions:
                 create:
                     form_type: Symfony\Component\Form\Extension\Core\Type\ButtonType
-                    disabled: true
                     attr:
-                        class: btn btn-primary
+                        class: btn btn-primary disabled
+                        data-toggle: modal
+                        data-target: '#admin-demo'
             # The query_handler configuration key must contain a valid Sidus/FilterBundle configuration definition
             # See # See https://github.com/VincentChalnot/SidusFilterBundle for more information
             query_handler:
