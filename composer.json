@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "sidus/datagrid-demo",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Simple example for datagrid bundle",
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle"
@@ -16,28 +16,24 @@
     "require": {
         "php": ">=7.2",
         "ext-intl": "*",
-        "doctrine/doctrine-bundle": "^1.6",
-        "doctrine/orm": "^2.5",
-        "incenteev/composer-parameter-handler": "^2.0",
+        "ext-iconv": "*",
+        "ext-mbstring": "*",
+        "doctrine/doctrine-bundle": "^1.12",
+        "doctrine/orm": "^2.7",
+        "incenteev/composer-parameter-handler": "^2.1",
         "sensio/distribution-bundle": "^5.0.19",
-        "sensio/framework-extra-bundle": "^5.0.0",
-        "symfony/monolog-bundle": "^3.1.0",
+        "sensio/framework-extra-bundle": "^5.4.0",
+        "symfony/monolog-bundle": "^3.5.0",
         "symfony/polyfill-apcu": "^1.0",
-        "symfony/swiftmailer-bundle": "^2.6.4",
         "symfony/symfony": "3.4.*",
-        "twig/twig": "^1.0||^2.0",
-
+        "twig/twig": "^2.12",
         "fzaninotto/faker": "1.8.*",
 
-        "sidus/filter-bundle": "dev-v1.4-dev",
-        "sidus/datagrid-bundle": "dev-v1.4-dev"
-    },
-    "require-dev": {
-        "sensio/generator-bundle": "^3.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "sidus/datagrid-bundle": "3.0.*"
     },
     "replace": {
         "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php73": "*",
         "symfony/polyfill-php72": "*",
         "symfony/polyfill-php71": "*",
         "symfony/polyfill-php70": "*",
@@ -82,10 +78,6 @@
                 "database_name": "SF_DATABASE_NAME",
                 "database_user": "SF_DATABASE_USER",
                 "database_password": "SF_DATABASE_PASSWORD",
-                "mailer_transport": "SF_MAILER_TRANSPORT",
-                "mailer_host": "SF_MAILER_HOST",
-                "mailer_user": "SF_MAILER_USER",
-                "mailer_password": "SF_MAILER_PASSWORD",
                 "secret": "SF_SECRET",
                 "trusted_proxies": "SF_TRUSTED_PROXIES"
             }
